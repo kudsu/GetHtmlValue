@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHV.Common", "GHV.Common\GH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHV.Web", "GHV.Web\GHV.Web.csproj", "{9F6C1F5A-D9C6-4EDA-AB97-EDBCE387792A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHV.TestConsole", "GHV.TestConsole\GHV.TestConsole.csproj", "{388AF005-1778-4965-AACC-32C54388B0D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9F6C1F5A-D9C6-4EDA-AB97-EDBCE387792A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F6C1F5A-D9C6-4EDA-AB97-EDBCE387792A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F6C1F5A-D9C6-4EDA-AB97-EDBCE387792A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388AF005-1778-4965-AACC-32C54388B0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388AF005-1778-4965-AACC-32C54388B0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388AF005-1778-4965-AACC-32C54388B0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388AF005-1778-4965-AACC-32C54388B0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -15,24 +17,18 @@ namespace GHV.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string html = HtmlHelper.GetHtmlCode("http://www.sanwen.com/sanwen/917929.html");
+            System.Net.WebClient wc1 = new System.Net.WebClient();
+            wc1.Encoding.GetEncoder();
+            string result = wc1.DownloadString(new Uri("http://www.sanwen.com/sanwen/917929.html"));
+            //string html = HtmlHelper.GetHtmlCode("http://www.sanwen.com/sanwen/917929.html");
 
-            string resV1 = StringHelper.SubStrOne(html, "<div class=\"row-left\">", "<div class=\"row-article-like\">");
-
-
-            Regex rg = new Regex("(?<=<div class=\"row-article\">).+?(?=</div>)", RegexOptions.Multiline | RegexOptions.Singleline);
-            string NameText = rg.Match(html).Value;
-
+            //string resV1 = StringHelper.SubStrOne(html, "<div class=\"row-left\">", "<div class=\"row-article-like\">");
 
 
+            //Regex rg = new Regex("(?<=<div class=\"row-article\">).+?(?=</div>)", RegexOptions.Multiline | RegexOptions.Singleline);
+            //string NameText = rg.Match(html).Value;
 
-
-            var aa = JsonConvert.DeserializeXmlNode(resV1);
-            var bb = JsonConvert.DeserializeXNode(resV1);
-            var cc = JsonConvert.SerializeXmlNode(aa);
-            var dd = JsonConvert.SerializeXNode(bb);
-
-
+            //SqlParameter sql = new SqlParameter("a",SqlDbType.NVarChar);
 
         }
     }
